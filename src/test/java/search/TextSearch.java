@@ -13,7 +13,7 @@ public class TextSearch extends Home {
         Search_POM pom = new Search_POM(driver);
         pom.search().click();
         Actions action = new Actions(driver);
-        Actions searchText = action.moveToElement(pom.search()).click().sendKeys("cricket").sendKeys(Keys.ENTER);
+        Actions searchText = action.moveToElement(pom.searchInput()).sendKeys("cricket").sendKeys(Keys.ENTER);
         searchText.build().perform();
 
     }

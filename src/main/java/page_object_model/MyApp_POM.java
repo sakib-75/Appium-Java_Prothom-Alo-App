@@ -26,7 +26,7 @@ public class MyApp_POM {
     WebElement loginBtn;
 
     @FindBy(id = "com.mcc.prothomalo:id/google_container")
-    WebElement googleLogin;
+    WebElement googleContainer;
 
     @FindBy(id = "com.mcc.prothomalo:id/fragment_login_tet_email")
     WebElement loginEmailInp;
@@ -46,6 +46,21 @@ public class MyApp_POM {
     @FindBy(id = "com.mcc.prothomalo:id/resize_text_apply_button")
     WebElement textResizeApply;
 
+    @FindBy(id = "com.mcc.prothomalo:id/action_login_signup")
+    WebElement signupLink;
+
+    @FindBy(id = "com.mcc.prothomalo:id/fragment_registration_tet_name")
+    WebElement signupNameInp;
+
+    @FindBy(id = "com.mcc.prothomalo:id/fragment_registration_tet_email")
+    WebElement signupEmailInp;
+
+    @FindBy(id = "com.mcc.prothomalo:id/fragment_registration_tet_password")
+    WebElement signupPasswordInp;
+
+    @FindBy(id = "com.mcc.prothomalo:id/fragment_registration_btn_continue")
+    WebElement signupContinueBtn;
+
     public WebElement myApp() {
         return myApp;
     }
@@ -58,19 +73,19 @@ public class MyApp_POM {
         return loginBtn;
     }
 
-    public WebElement googleLogin(){
-        return googleLogin;
+    public WebElement googleContainer() {
+        return googleContainer;
     }
 
-    public void setLoginEmail(String email){
+    public void setLoginEmail(String email) {
         loginEmailInp.sendKeys(email);
     }
 
-    public void setLoginPassword(String password){
+    public void setLoginPassword(String password) {
         loginPasswordInp.sendKeys(password);
     }
 
-    public WebElement loginContinueBtn(){
+    public WebElement loginContinueBtn() {
         return loginContinueBtn;
     }
 
@@ -78,13 +93,32 @@ public class MyApp_POM {
         return settingsOption;
     }
 
-    public List<WebElement> textResizeOption(){
+    public List<WebElement> textResizeOption() {
         return textResizeOption;
     }
 
-    public WebElement textResizeApply(){
+    public WebElement textResizeApply() {
         return textResizeApply;
     }
 
+    public WebElement signupLink() {
+        return signupLink;
+    }
+
+    public void setSignupName(String name) {
+        signupNameInp.sendKeys(name);
+    }
+
+    public void setSignupEmail(String email) {
+        signupEmailInp.sendKeys(email);
+    }
+
+    public void setSignupPassword(String password) {
+        signupPasswordInp.sendKeys(password);
+    }
+
+    public WebElement signupContinueBtn() {
+        return signupContinueBtn;
+    }
 
 }

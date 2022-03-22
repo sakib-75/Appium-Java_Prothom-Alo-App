@@ -13,7 +13,7 @@ public class LoginWithEmail extends Home {
         pom.loginBtn().click();
 
         pom.setLoginEmail("sakibulislam285@gmail.com");
-        pom.setLoginPassword("Sakib17181103054");
+        pom.setLoginPassword("Sakib985064");
         pom.loginContinueBtn().click();
 
     }

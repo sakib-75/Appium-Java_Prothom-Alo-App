@@ -11,7 +11,7 @@ public class LoginWithGoogle extends Home {
         MyApp_POM pom = new MyApp_POM(driver);
         pom.myApp().click();
         pom.loginBtn().click();
-        pom.googleLogin().click();
+        pom.googleContainer().click();
 
     }
 

@@ -29,7 +29,7 @@ public class Section_POM {
     List<WebElement> menuNewsList;
 
     @FindBy(id = "com.mcc.prothomalo:id/menu_expand_button")
-    WebElement menuExpandBtn;
+    List<WebElement> menuExpandBtn;
 
     public WebElement section() {
         return section;
@@ -47,7 +47,7 @@ public class Section_POM {
         return menuNewsList;
     }
 
-    public WebElement menuExpandBtn(){
+    public List<WebElement> menuExpandBtn(){
         return menuExpandBtn;
     }
 

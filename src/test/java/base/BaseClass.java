@@ -20,6 +20,8 @@ public class BaseClass {
         File appDir = new File("src/main/resources");
         File app = new File(appDir, "prothomalo.apk");
 
+        cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
+        cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11");
         cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Pixel 3 API 30");
         cap.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
         cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");

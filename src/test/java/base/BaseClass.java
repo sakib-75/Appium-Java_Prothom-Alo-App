@@ -2,6 +2,7 @@ package base;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
+import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterSuite;
 
@@ -21,8 +22,10 @@ public class BaseClass {
         File app = new File(appDir, "prothomalo.apk");
 
         cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
-        cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11");
-        cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Pixel 3 API 30");
+        cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, "12");
+        cap.setCapability(MobileCapabilityType.DEVICE_NAME, "realme 8");
+        cap.setCapability(MobileCapabilityType.UDID, "VKKNV8S8FYYXLRH6");
+
         cap.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
         cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
         // Appium server
